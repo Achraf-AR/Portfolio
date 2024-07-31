@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+    background-color: #333; /* Couleur d'arrière-plan sombre pour l'en-tête */
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #FFD700; /* Couleur dorée pour le logo */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: #FFD700; /* Couleur dorée pour les liens de navigation */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: #f0e0a3; /* Couleur d'accentuation au survol */
+}
+
+section {
+    width: 100%;
+    min-height: 100vh; /* Occupation de toute la hauteur de la page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #000; /* Couleur de fond noire */
+    color: #FFD700; /* Couleur du texte doré */
+}
+
+.main h2 {
+    color: #FFD700; /* Couleur dorée pour les titres */
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #FFD700; /* Couleur dorée pour le texte en surbrillance */
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #FFD700; /* Couleur dorée pour le sous-titre */
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #000; /* Couleur noire pour le texte du bouton */
+    background-color: #FFD700; /* Couleur dorée pour le bouton */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #f0e0a3; /* Couleur d'accentuation au survol */
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #FFD700; /* Couleur dorée pour les icônes sociales */
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #FFD700; /* Couleur dorée pour les titres des sections */
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #333; /* Arrière-plan sombre pour les cartes */
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #FFD700; /* Couleur dorée pour les icônes dans les cartes */
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #FFD700; /* Couleur dorée pour les titres des cartes */
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.contact .card {
+    background-color: #333; /* Arrière-plan sombre pour les cartes de contact */
+}
+
+.contact .icon {
+    font-size: 4.5em;
+    color: #FFD700; /* Couleur dorée pour les icônes dans les cartes de contact */
+}
+
+.contact .info h3 {
+    color: #FFD700; /* Couleur dorée pour les titres de contact */
+}
+
+.contact .info p {
+    font-size: 1em; /* Taille du texte réduite */
+    border: 1px solid #FFD700; /* Bordure dorée */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #000; /* Fond noir pour contraster avec le texte */
+    color: #FFD700; /* Couleur du texte */
+}
+
+.footer {
+    background-color: #000; /* Couleur d'arrière-plan noire pour le pied de page */
+    color: #FFD700; /* Couleur dorée pour le texte du pied de page */
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #FFD700; /* Couleur dorée pour le texte accentué */
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: #FFD700; /* Couleur dorée pour les icônes sociales dans le pied de page */
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+}
